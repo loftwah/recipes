@@ -5,7 +5,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 module.exports = Ferdi => {
   const getMessages = () => {
     const unreadMessageCountElement = document.querySelector('#notifications-anchor .badge');
-    Ferdi.setBadge(unreadMessageCountElement ? Number(unreadMessageCountElement.textContent) : 0, 0);
+    const unreadMessagesCount = unreadMessageCountElement ? Number(unreadMessageCountElement.textContent) : 0;
+    Ferdi.setBadge(unreadMessagesCount, 0);
   };
   Ferdi.loop(getMessages);
 

@@ -1,1 +1,1 @@
-module.exports = Ferdi => class confluence extends Ferdi {};
+module.exports = Ferdi => Ferdi;
